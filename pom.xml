@@ -39,16 +39,6 @@
             </properties>
         </profile>
         <profile>
-            <id>Clockify</id>
-            <properties>
-                <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
-                <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel3_Testing</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\germa\\\\OneDrive\\\\Documentos\\\\Crowdar\\\\8-9-TrabajoPractico-LippiaMobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
-                <crowdar.deviceName>Pixel3</crowdar.deviceName>
-            </properties>
-        </profile>
-        <profile>
             <id>StackLocal</id>
             <properties>
                 <crowdar.driverHub>http://localhost:4444/wd/hub</crowdar.driverHub>
