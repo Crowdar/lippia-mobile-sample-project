@@ -33,8 +33,18 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\golde\\\\Desktop\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.avd>Pixel3_Testing</crowdar.avd>
+                <crowdar.appLocation>C:\\\\Users\\\\germa\\\\OneDrive\\\\Documentos\\\\Crowdar\\\\8-9-TrabajoPractico-LippiaMobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.deviceName>Pixel3</crowdar.deviceName>
+            </properties>
+        </profile>
+        <profile>
+            <id>Local</id>
+            <properties>
+                <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
+                <cucumber.runner>testng.xml</cucumber.runner>
+                <crowdar.avd>Pixel3_Testing</crowdar.avd>
+                <crowdar.appLocation>C:\\\\Users\\\\germa\\\\OneDrive\\\\Documentos\\\\Crowdar\\\\8-9-TrabajoPractico-LippiaMobile\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>

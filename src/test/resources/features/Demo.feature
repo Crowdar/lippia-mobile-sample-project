@@ -1,19 +1,23 @@
-Feature: As a potential client i want to interact with the mobile application
+@LippiaApk
+Feature: Como potencial cliente quiero interactuar con la aplicacion de Lippia
 
-  Scenario Outline: The user starts the application, registers a new user, changes the language, log out of the app and log in to the app.
-    Given The app is loaded correctly
-    When The user goes to the Sign Up page
-    And The user registers a new user with: <username>, <email>, <password>
-    Then Home page is displayed
+    @Registro
+    Scenario Outline: El usuario quiere registrarse
+      Given La aplicacion funciona correctamente
+      When El usuario se dirige a registrarse
+      And El usuario ingresa los siguientes datos para el registro: <username>, <email>, <password>
+      Then El usuario ingresa exitosamente
 
-    When The user changes the language
-    And The user log out of the app
-    Then Login page is displayed
+    @CambiarIdioma
+    When El usuario cambia el idioma
+    And El usuario hace un log out de la app
+    Then El usuario se encuentra ahora en el login
 
-    When The user logs in the application with: <email>, <password>
-    Then Home page is displayed
+    @IngresoApp
+    When El usuario ingresa a la app con su: <email>, <password>
+    Then El usuario ingresa exitosamente
 
-    @Demo
+
     Examples:
       | username   | email                | password |
       | automation | automation@gmail.com | 123456   |
