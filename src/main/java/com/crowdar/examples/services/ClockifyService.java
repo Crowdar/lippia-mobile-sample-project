@@ -2,6 +2,7 @@ package com.crowdar.examples.services;
 
 import com.crowdar.core.actions.MobileActionManager;
 import com.crowdar.examples.constants.ClockifyConstants;
+import com.crowdar.examples.constants.HomeConstants;
 import org.testng.Assert;
 
 public class ClockifyService {
@@ -16,6 +17,7 @@ public class ClockifyService {
     }
 
     public static void ingresoApp() {
+        MobileActionManager.waitVisibility(ClockifyConstants.HOME_APP);
         Assert.assertTrue(MobileActionManager.isVisible(ClockifyConstants.HOME_APP));
     }
 }
