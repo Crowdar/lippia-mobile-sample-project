@@ -16,20 +16,23 @@ public class CrearUnEscenarioService {
     public static void ingresarDatosInicio(String inicio) {
         MobileActionManager.click(CrearUnEscenarioConstants.INICIO);
         MobileActionManager.click(CrearUnEscenarioConstants.SELECIONAR_TIEMPO);
-        MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO,inicio);
-        MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO,inicio);
+        for(int i = 0; i < 2; i++) {
+            MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO, inicio);
+        }
     }
 
     public static void ingresarDatosFin(String fin) {
         MobileActionManager.click(CrearUnEscenarioConstants.FIN);
         MobileActionManager.click(CrearUnEscenarioConstants.SELECIONAR_TIEMPO);
-        MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO,fin);
-        MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO,fin);
-        MobileActionManager.click(CrearUnEscenarioConstants.GUARDAR);
+        for(int i = 0; i < 2; i++) {
+            MobileActionManager.setInput(CrearUnEscenarioConstants.SELECIONAR_TIEMPO, fin);
+        }
+        for(int i = 0; i < 2; i++) {
+            MobileActionManager.click(CrearUnEscenarioConstants.GUARDAR);
+        }
     }
 
     public static void validarEscenario() {
-        MobileActionManager.click(CrearUnEscenarioConstants.GUARDAR);
         MobileActionManager.waitPresence(ClockifyLoginConstants.HOME_APP);
         Assert.assertTrue(MobileActionManager.isVisible(CrearUnEscenarioConstants.VERIFICACION_ESCENARIO));
     }
