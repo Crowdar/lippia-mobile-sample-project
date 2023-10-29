@@ -1,6 +1,6 @@
 package com.crowdar.examples.constants;
 
-public class ClockifyConstants {
+public class ClockifyLoginConstants {
     public static final String APP_VISIBLE = "xpath://android.widget.ImageView[@content-desc='Clockify logo']";
 
     public static final String USER = "id:emailAddressInput";
