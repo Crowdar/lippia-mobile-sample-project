@@ -1,0 +1,4 @@
+{
+  "appium:appPackage": "me.clockify.android",
+  "appium:appActivity": "me.clockify.android.presenter.SplashActivity"
+}
