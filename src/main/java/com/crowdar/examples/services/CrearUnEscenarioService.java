@@ -1,7 +1,7 @@
 package com.crowdar.examples.services;
 
 import com.crowdar.core.actions.MobileActionManager;
-import com.crowdar.examples.constants.ClockifyLoginConstants;
+import com.crowdar.examples.constants.LoginConstants;
 import com.crowdar.examples.constants.CrearUnEscenarioConstants;
 import org.testng.Assert;
 
@@ -33,7 +33,7 @@ public class CrearUnEscenarioService {
     }
 
     public static void validarEscenario() {
-        MobileActionManager.waitPresence(ClockifyLoginConstants.HOME_APP);
+        MobileActionManager.waitPresence(LoginConstants.HOME_APP);
         Assert.assertTrue(MobileActionManager.isVisible(CrearUnEscenarioConstants.VERIFICACION_ESCENARIO));
     }
 }

@@ -1,28 +1,23 @@
 package com.crowdar.examples.steps;
 
-import com.crowdar.core.PageSteps;
-import com.crowdar.core.actions.MobileActionManager;
-import com.crowdar.examples.constants.LoginConstants;
 import com.crowdar.examples.services.LoginService;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.java.en.Given;
 
-public class LoginSteps extends PageSteps {
-
-    @Given("La aplicacion funciona correctamente")
-    public void loginVisible() {
-        LoginService.isViewLoaded();
+public class LoginSteps {
+    @Given("Me encuento en la aplicacion")
+    public void verificacionApp() {
+        LoginService.verificacionApp();
     }
 
-    @When("El usuario se dirige a registrarse")
-    public void irRegistro() {
-            LoginService.irRegistro();
+    @When("Como usuario ingreso a mis datos: (.*), (.*)$")
+    public void datosLogin(String user, String constrasena) {
+        LoginService.datosLogin(user, constrasena);
     }
 
-    @When("El usuario ingresa a la app con su: (.*), (.*)")
-    public void hacerLogin(String email, String password) {
-        LoginService.hacerLogin(email, password);
+    @Then("Como usuario ingreso al aplicacion exitosamente")
+    public void ingresoApp() {
+        LoginService.ingresoApp();
     }
-
 }

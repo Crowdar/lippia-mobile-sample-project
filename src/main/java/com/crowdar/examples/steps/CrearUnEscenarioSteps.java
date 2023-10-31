@@ -1,6 +1,5 @@
 package com.crowdar.examples.steps;
 
-import com.crowdar.examples.services.ClockifyLoginService;
 import com.crowdar.examples.services.CrearUnEscenarioService;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;

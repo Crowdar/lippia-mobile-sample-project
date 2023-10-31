@@ -4,7 +4,5 @@
   "platformName": "Android",
   "avd": "{{avd}}",
   "resetKeyboard": "true",
-  "unicodeKeyboard": "true",
-  "appium:appPackage": "me.clockify.android",
-  "appium:appActivity": "me.clockify.android.presenter.SplashActivity"
+  "unicodeKeyboard": "true"
 }
