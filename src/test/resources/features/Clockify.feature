@@ -16,6 +16,6 @@ Feature: Como usuario quiero interactuar con clockify
 
     Examples:
       | Dia               |  | Inicio | Fin |
-      | 08 November 2023  |  | 9      | 18  |
+      | 10 November 2023  |  | 9      | 18  |
 
 
