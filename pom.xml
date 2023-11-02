@@ -33,11 +33,33 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.avd>Pixel3</crowdar.avd>
-                <crowdar.appLocation>C:\\\\Users\\\\golde\\\\Desktop\\\\lippia-mobile-sample-project\\\\sample_apk\\\\lippia.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:\\\\Users\\\\germa\\\\OneDrive\\\\Escritorio\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
+            </properties>
+        </profile>
+
+        <profile>
+            <id>Emulado</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <properties>
+                <crowdar.avd>Pixel3_Testing</crowdar.avd>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/emuladorCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
                 <crowdar.deviceName>Pixel3</crowdar.deviceName>
             </properties>
         </profile>
+
+        <profile>
+            <id>Fisico</id>
+            <activation>
+                <activeByDefault>false</activeByDefault>
+            </activation>
+            <properties>
+                <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/fisicoCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
+                <crowdar.deviceName>A32</crowdar.deviceName>
+            </properties>
+        </profile>
+
         <profile>
             <id>StackLocal</id>
             <properties>
