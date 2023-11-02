@@ -15,7 +15,7 @@ Feature: Como usuario quiero interactuar con clockify
     Then El usuario puede ver el escenario creado
 
     Examples:
-    | Dia              || Inicio | Fin |
-    | 08 October 2023  ||   9    | 18  |
+      | Dia               |  | Inicio | Fin |
+      | 08 November 2023  |  | 9      | 18  |
 
 

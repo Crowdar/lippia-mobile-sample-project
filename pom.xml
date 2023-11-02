@@ -33,7 +33,7 @@
             <properties>
                 <crowdar.driverHub>http://127.0.0.1:4723/wd/hub</crowdar.driverHub>
                 <cucumber.runner>testng.xml</cucumber.runner>
-                <crowdar.appLocation>sample_apk/Clockify.apk</crowdar.appLocation>
+                <crowdar.appLocation>C:\\\\Users\\\\germa\\\\OneDrive\\\\Documentos\\\\Crowdar\\\\8-9-TrabajoPractico-LippiaMobile\\\\lippia-mobile-sample-project\\\\lippia-mobile-sample-project\\\\sample_apk\\\\Clockify.apk</crowdar.appLocation>
             </properties>
         </profile>
 
@@ -56,7 +56,7 @@
             </activation>
             <properties>
                 <crowdar.projectType.driverCapabilities.jsonFile>src/main/resources/capabilities/fisicoCapabilities.json</crowdar.projectType.driverCapabilities.jsonFile>
-                <crowdar.deviceName>GalaxyA32</crowdar.deviceName>
+                <crowdar.deviceName>A32</crowdar.deviceName>
             </properties>
         </profile>
 
